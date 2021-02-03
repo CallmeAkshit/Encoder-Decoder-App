@@ -11,4 +11,4 @@ window.addEventListener('load', () => {
         decodeButton.addEventListener('click', () => {
             outputBox.value = decodeURIComponent(input.value);
         });
-});
+}); 
