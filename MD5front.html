@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-encDec.css">
+    <title>Encoder-Decoder</title>
+    <script src = './MD5Back.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/components/core.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/md5.js"></script>
+</head>
+<body>
+    <header>
+
+    </header>
+    <nav class = "nav">
+        <div class = "nav-right">
+            <a href='URLFront.html' class = 'nav-r-button'>URL Encoder/Decoder</a>
+            <a href='B64Front.html'>Base64 </a>
+
+            <span class = 'dropdown '>
+                <a class = "drop-button">
+                    Hash Generator
+                    <i class="fa fa-caret-down"></i>
+                </a>
+
+                <div class = 'dropdown-content'>
+                    <a href="MD5front.html">MD-5</a>
+                    <a href='SHA1Front.html'>SHA-1</a>
+                    <a href="SHA256Front.html">SHA-256</a>
+                    <a href="SHA512Front.html">SHA-512</a>
+
+                </div>
+            </span>
+           
+        </div>
+
+        <div class = "nav-left">
+            encoderDecoder
+        </div>
+    </nav>
+    <main>
+        <div class = "input-output">
+
+           <textarea
+                class = 'box'
+                rows = "5"
+                cols = "50"
+                id = 'input-box'
+                placeholder= 'Enter the text that you wish to encode/decode'
+           ></textarea>
+
+           <textarea
+                class = 'box'
+                rows = "5"
+                cols = "50"
+                id = 'output-box'
+                placeholder= 'Your results will appear here'
+           ></textarea>
+
+        </div>
+        
+        <div class = "buttons">
+            <input
+                class = 'button'
+                type = 'button'
+                id = 'encode-button'
+                value = 'Generate'
+            >
+
+        </div>
+        <div class = "About">
+            <h2 class ='abouth'>About MD-5 Generator Tool</h2>
+            <p>Use the online tool from above to either encode or decode a string of text. For worldwide interoperability, URIs have to be encoded uniformly. To map the wide range of characters used worldwide into the 60 or so allowed characters in a URI, a two-step process is used:</p>
+            <ul>
+                <li>Convert the character string into a sequence of bytes using the UTF-8 encoding</li>
+                <li>Convert each byte that is not an ASCII letter or digit to %HH, where HH is the hexadecimal value of the byte</li>
+            </ul>
+            <p>For example, the string: François ,would be encoded as: Fran%C3%A7ois</p>
+            <p>(The "ç" is encoded in UTF-8 as two bytes C3 (hex) and A7 (hex), which are then written as the three characters "%c3" and "%a7" respectively.) This can make a URI rather long (up to 9 ASCII characters for a single Unicode character), but the intention is that browsers only need to display the decoded form, and many protocols can send UTF-8 without the %HH escaping.</p>
+        
+        </div>
+    </main>
+
+    <footer class = 'footer'>
+        By me
+    </footer>
+    
+</body>
+</html>
